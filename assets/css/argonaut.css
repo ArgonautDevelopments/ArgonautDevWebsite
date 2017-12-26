@@ -30,7 +30,6 @@ a:visited{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    margin-bottom: 30px;
     height: calc(100vh - 60px);
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
@@ -118,11 +117,12 @@ a:visited{
 }
 
 .footer{
-    margin-top: 20px;
     padding-top:30px;
     text-align: center;
     color: white;
     background-color: #444444;
+    position: relative;
+    z-index: -100;
 }
 
 .footer a:visited{
@@ -140,8 +140,30 @@ a:visited{
 }
 
 .desc{
+    padding-top: 30px;
     text-align: center;
     font-weight: 500;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+    padding-bottom: 30px;
+}
+
+.team{
+    background-image: url("../images/team-bg.jpg");
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+}
+
+.teamIcon{
+    max-width: 100px;
+    border-radius: 50%;
 }
 
 .avatarIcon{
